@@ -25,15 +25,15 @@ class PostsFragment : Fragment(R.layout.fragment_posts) {
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: PostsAdapter
     private val images = listOf(
-        R.drawable.a, // Replace with your drawable resource IDs
-        R.drawable.b,
-        R.drawable.c,
-        R.drawable.d,
-        R.drawable.apple2,
-        R.drawable.apple,
-        R.drawable.e,
-        R.drawable.f,
-        R.drawable.p
+        R.drawable.aa, // Replace with your drawable resource IDs
+        R.drawable.bb,
+        R.drawable.cc,
+        R.drawable.dd,
+        R.drawable.ee,
+        R.drawable.ff,
+        R.drawable.gg,
+        R.drawable.hh,
+        R.drawable.ii
     )
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
