@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Profile Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/a"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/MyCustomShapeAppearance"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/txtPost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="20dp"
+                                android:text="345"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/descPosts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:text="Posts" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/txtFollowers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="20dp"
+                            android:text="541"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/descFollowers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="22dp"
+                            android:text="Followers" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/txtFollowing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="35dp"
+                                android:layout_marginTop="20dp"
+                                android:text="654"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/descFollowing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Following" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mr. Apple"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/profile_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inventor Of Gravity 🌍" />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/follow_button"
+                        android:layout_width="170dp"
+                        android:layout_height="38dp"
+                        android:backgroundTint="#03A9F4"
+                        android:text="Follow"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        app:cornerRadius="10dp" />
+
+                    <Button
+                        android:id="@+id/message_button"
+                        android:layout_width="170dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="5dp"
+                        android:backgroundTint="#AFAFAF"
+                        android:text="Message"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        app:cornerRadius="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/Highlight1"
+                    android:layout_width="72dp"
+                    android:layout_margin="12dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/a"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/MyCustomShapeAppearance"/>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/Highlight2"
+                    android:layout_width="72dp"
+                    android:layout_margin="12dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/b"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/MyCustomShapeAppearance"/>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/Highlight3"
+                    android:layout_width="72dp"
+                    android:layout_margin="12dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/c"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/MyCustomShapeAppearance"/>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/Highlight4"
+                    android:layout_width="72dp"
+                    android:layout_margin="12dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/p"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/MyCustomShapeAppearance"/>
+            </LinearLayout>
+
+            <!-- ViewPager -->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/Posts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tab1" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/Reels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tab2" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/Tagged"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tab3" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- Tab Layout -->
+
+        </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
